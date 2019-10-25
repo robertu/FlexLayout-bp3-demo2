@@ -7,7 +7,7 @@ import "@blueprintjs/select/lib/css/blueprint-select.css";
 import ExampleTabs from "./components/ExampleTabs";
 import Form from "./components/Form";
 import Table from "./components/Table";
-import * as AppLayout from "flexlayout-react-bp3";
+import { AppLayout } from "flexlayout-react-bp3";
 
 
 FocusStyleManager.onlyShowFocusOnTabs();
