@@ -56,6 +56,8 @@ export default class ExampleTabs extends React.PureComponent {
     );
 
     return (
+      <div className="example-window">
+
       <Example className="docs-tabs-example" options={options} {...this.props}>
 
         {/* uncontrolled mode & each Tab has a panel: */}
@@ -88,6 +90,7 @@ export default class ExampleTabs extends React.PureComponent {
           />
         </Tabs>
       </Example>
+      </div>
     );
   }
 

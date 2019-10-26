@@ -6,14 +6,16 @@ export default () => {
         return <Cell>{`$${(rowIndex * 10).toFixed(2)}`}</Cell>
     };
     return (
-        <Table numRows={40}>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-            <Column name="Dollars" cellRenderer={cellRenderer}/>
-        </Table>
+        <div className="example-window">
+            <Table numRows={40}>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+                <Column name="Dollars" cellRenderer={cellRenderer}/>
+            </Table>
+        </div>
     )    
 }
