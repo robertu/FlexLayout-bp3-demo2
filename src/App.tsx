@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, FocusStyleManager } from "@blueprintjs/core";
+import { Layout } from "@blueprintjs/layout";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/table/lib/css/table.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
+import "@blueprintjs/layout/lib/css/layout.css";
 import ExampleTabs from "./components/ExampleTabs";
 import Form from "./components/Form";
 import Table from "./components/Table";
-import { AppLayout } from "flexlayout-react-bp3";
 
 
 FocusStyleManager.onlyShowFocusOnTabs();
@@ -115,7 +116,7 @@ const App: React.FC = () => {
   }
 
   return (
-      <AppLayout
+      <Layout
         title="Traco GPS"
         component={component}
         userMenu={userMenu}
