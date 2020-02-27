@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, FocusStyleManager } from "@blueprintjs/core";
-import { Layout } from "@blueprintjs/layout";
+import { Layout } from "@blueprintjs/applay";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/table/lib/css/table.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
-import "@blueprintjs/layout/lib/css/layout.css";
+import "@blueprintjs/applay/lib/css/applay.css";
 import ExampleTabs from "./components/ExampleTabs";
 import Form from "./components/Form";
 import Table from "./components/Table";
@@ -28,13 +28,13 @@ const App: React.FC = () => {
   const customMenu = [
     {
       icon: "document",
-      name: "Plik",
+      name: "File",
       menu: (
         <Menu>
           <MenuItem icon="key-tab" text="New window with tabs" onClick={() => nodeCreator(<ExampleTabs/>, "ExampleTabs")} />
           <MenuItem icon="form" text="New window with form" onClick={() => nodeCreator(<Form/>, "ExampleForm")} />
           <MenuItem icon="panel-table" text="New window with table" onClick={() => nodeCreator(<Table/>, "ExampleTable")} />
-          <MenuItem icon="map" text="Mapa" onClick={() => nodeCreator(<Form/>, "Mapa")} />
+          <MenuItem icon="map" text="Form" onClick={() => nodeCreator(<Form/>, "The Form")} />
         </Menu>
       )
     }
@@ -103,8 +103,8 @@ const App: React.FC = () => {
             "children": [
                 {
                     "type": "tab",
-                    "name": "Dojazd z Zakładowej na Targową",
-                    "component": "dojazd",
+                    "name": "Just a form",
+                    "component": "just-a-name",
                     "enableClose": true,
                     "id": "122",
                     "layout": <Table/>,
