@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, FocusStyleManager } from "@blueprintjs/core";
-import { Layout } from "@blueprintjs/applay";
+import { Layout } from "./applay";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/table/lib/css/table.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
-import "@blueprintjs/applay/lib/css/applay.css";
+import "./applay/applay.scss";
 import ExampleTabs from "./components/ExampleTabs";
 import Form from "./components/Form";
 import Table from "./components/Table";
